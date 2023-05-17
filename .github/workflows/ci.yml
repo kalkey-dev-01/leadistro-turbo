@@ -16,7 +16,7 @@ env:
 jobs:
   build-lint:
     env:
-      DATABASE_URL: file:./db.sqlite
+      DATABASE_URL: postgresql://postgres:5wOOENNzKeS6PsZfVvDt@containers-us-west-95.railway.app:5454/railway
     runs-on: ubuntu-latest
 
     steps:
