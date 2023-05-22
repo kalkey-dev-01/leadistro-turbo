@@ -8,6 +8,9 @@ const workspaceRoot = path.resolve(projectRoot, "../..");
 // Create the default Metro config
 const config = getDefaultConfig(projectRoot);
 
+// For Firebase by expo's site
+config.resolver.assetExts.push('cjs');
+
 // Add import aliases
 config.resolver.alias = {
   "~": path.resolve(projectRoot, "src"),

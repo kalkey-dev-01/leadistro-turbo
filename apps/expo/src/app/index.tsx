@@ -1,9 +1,27 @@
 
 // import { View, Text } from 'react-native'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Redirect } from 'expo-router'
+import { auth } from '~/firebase/config'
+import type { User } from 'firebase/auth/react-native'
+import { Text, View } from 'react-native'
 
 const Index = () => {
+  const [user, setUser] = useState<User | null>(null);
+  const [loading, setLoading] = useState(false);
+  useEffect(() => {
+    auth.onAuthStateChanged(user => {
+      setLoading(true);
+      setUser(user);
+      setLoading(false);
+    })
+  }, [user, loading])
+  if (loading) return (
+    <View>
+      <Text>Loading</Text>
+    </View>
+  )
+  if (!user) return <Redirect href='signin' />
   return <Redirect href='home' />
 }
 
