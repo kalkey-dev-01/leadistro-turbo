@@ -11,7 +11,7 @@ import { type AppRouter } from "@acme/api";
  * Only For Projects Internal Firebase Route.
  */
 export const GoogleOAuthClient =
-  '976545594978-27fjsomis9k50aos3knmhda342fal8qn.apps.googleusercontent.com';
+  '';
 
 /**
  * A set of typesafe hooks for consuming your API.

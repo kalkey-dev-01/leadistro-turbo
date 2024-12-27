@@ -8,14 +8,14 @@ import {
 } from "firebase/auth/react-native";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBfYXSq1KV1FDBzYpfc8Q-U_8ulDwooud4",
-  authDomain: "leadistro-12rh78.firebaseapp.com",
-  databaseURL: "https://leadistro-12rh78-default-rtdb.firebaseio.com",
-  projectId: "leadistro-12rh78",
-  storageBucket: "leadistro-12rh78.appspot.com",
-  messagingSenderId: "976545594978",
-  appId: "1:976545594978:web:d9b11f6e1a811f9fb0db3b",
-  measurementId: "G-FWCSYQ8EFY",
+  apiKey: "",
+  authDomain: "",
+  databaseURL: "",
+  projectId: "",
+  storageBucket: "",
+  messagingSenderId: "",
+  appId: "",
+  measurementId: "",
 };
 
 // Init Firebase
